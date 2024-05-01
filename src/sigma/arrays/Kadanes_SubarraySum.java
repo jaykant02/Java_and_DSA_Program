@@ -5,7 +5,7 @@ public class Kadanes_SubarraySum {
         int CS = 0;
         int MS = Integer.MIN_VALUE;
 
-        for(int i=0; i< numbers.length; i++){
+        for(int i=1; i< numbers.length; i++){
             CS = CS + numbers[i];
             if(CS<0){
                 CS=0;
@@ -17,7 +17,7 @@ public class Kadanes_SubarraySum {
     }
 
     public static void main(String[] args) {
-        int numbers[] = {-2,-3,4,-1,-2,1,5,-3};
+        int numbers[] = {1,-2,3,-4};
         ArraySum3(numbers);
     }
 }

@@ -1,6 +1,7 @@
 package sigma.basics;
 import java.util.*;
-public class Check_prime_no {
+public class
+Check_prime_no {
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
         int n = read.nextInt();
