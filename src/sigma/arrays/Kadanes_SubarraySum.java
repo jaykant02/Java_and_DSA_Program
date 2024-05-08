@@ -1,7 +1,7 @@
 package sigma.arrays;
 
 public class Kadanes_SubarraySum {
-    public static void ArraySum3(int numbers[]){
+    public static void ArraySum3(int[] numbers){
         int CS = 0;
         int MS = Integer.MIN_VALUE;
 
@@ -17,7 +17,7 @@ public class Kadanes_SubarraySum {
     }
 
     public static void main(String[] args) {
-        int numbers[] = {1,-2,3,-4};
+        int[] numbers = {1,-2,3,-4};
         ArraySum3(numbers);
     }
 }

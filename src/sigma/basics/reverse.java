@@ -5,7 +5,7 @@ public class reverse {
         Scanner read = new Scanner(System.in);
         int n = read.nextInt();
 
-        while(n>0){
+        while(n!=0){
             int lastdigit= n%10; // ye last digit ko as remainder return karwa deta hai
             System.out.print(lastdigit);
             n=n/10; //ye last digit ko remove kar deta hai

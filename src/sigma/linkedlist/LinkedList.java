@@ -33,6 +33,18 @@ public class LinkedList {
             Tail.next = newNode;
             Tail = newNode;
         }
+
+        public void print(){
+           if(Head == null){
+               System.out.println("List is empty");
+           }
+            Node temp = Head;
+           while(Head != null){
+               System.out.print(temp.data + " ");
+               temp = temp.next;
+           }
+           System.out.println();
+        }
 }
 
 class Main {
