@@ -22,7 +22,7 @@ public class InsertionSort  {
     }
 
     public static void main(String[] args) {
-        int arr[] = {3,6,2,1,8,7,4,5,3,1};
+        int arr[] = {5,6,2,1,3};
         insertSort(arr);
         printArr(arr);
     }

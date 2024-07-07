@@ -1,13 +1,13 @@
 package sigma.linkedlist;
 
 public class LinkedList {
-    class Node {
+    static class Node {
         int data;
         Node next;
 
         Node(int data) {
         this.data = data;
-        this.next = null;
+       // this.next = null;
     }
 }
 
@@ -17,7 +17,7 @@ public class LinkedList {
        public void addFirst(int data){
             Node newNode = new Node(data);
             if(Head == null){
-                Head = newNode;
+                Head = Tail= newNode;
                 return;
             }
             newNode.next = Head;
@@ -27,7 +27,7 @@ public class LinkedList {
         public void addLast(int data){
            Node newNode = new Node(data);
             if(Head == null){
-                Head = newNode;
+                Head = Tail = newNode;
                 return;
             }
             Tail.next = newNode;
@@ -39,7 +39,7 @@ public class LinkedList {
                System.out.println("List is empty");
            }
             Node temp = Head;
-           while(Head != null){
+           while(temp != null){
                System.out.print(temp.data + " ");
                temp = temp.next;
            }
@@ -47,7 +47,7 @@ public class LinkedList {
         }
 }
 
-class Main {
+class Main2 {
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList();
         linkedList.addFirst(1);
@@ -56,6 +56,7 @@ class Main {
         linkedList.addLast(4);
         linkedList.addLast(5);
         linkedList.addLast(6);
+        linkedList.print();
 
 
     }
